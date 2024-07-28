@@ -1,3 +1,4 @@
+/* Thiết lập chung cho thẻ body */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -5,7 +6,7 @@ body {
     padding: 0;
     background-color: #f0f0f0; 
   }
-  
+  /* Thiết kế cho khu vực trò chơi */
   #game {
     margin: 20px;
     background-color: #fff; 
@@ -13,24 +14,24 @@ body {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
   }
-  
+  /* Thiết kế cho tiêu đề */
   h1 {
     font-size: 2em;
     color: #272727;
   }
-  
+  /* Khu vực chứa các từ cần gõ */
   #wordsContainer {
     font-size: 1.5em;
     margin: 20px 0;
     color: #555; 
   }
-  
+  /* Cài đặt cho từng từ riêng lẻ */
   .word {
-    display: inline-block;
+    display: inline-block; /*những từ bên cạnh nhau */
     padding: 5px;
     margin: 0 5px;
   }
-  
+  /* Cài đặt kiểu cho ô nhập liệu */
   #input {
     margin: 20px 0;
     font-size: 1.5em;
@@ -40,13 +41,13 @@ body {
     border-radius: 5px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   }
-  
+  /* Cài đặt kiểu cho điểm số và bộ đếm thời gian */
   #score, #timer {
-    font-size: 1.2em;
+    font-size: 1.2 ;
     margin: 10px 0;
     color: #666; 
   }
-  
+  /* Cài đặt kiểu cho nút đặt lại (reset) */
   #resetButton {
     font-size: 1em;
     padding: 10px;
@@ -58,28 +59,28 @@ body {
     cursor: pointer;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   }
-  
+  /* Cài đặt kiểu cho vùng chứa bàn phím */
   #keyboard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f5f5f5; 
+    background-color: #F5F7F8; 
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
+  /* Cài đặt kiểu cho từng nửa bàn phím */
   .keyboard-half {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+  /* Cài đặt kiểu cho từng hàng phím */
   .row {
     display: flex;
     justify-content: center;
   }
-  
+  /* Cài đặt chung cho các phím */
   .key {
     display: flex;
     align-items: center;
@@ -94,34 +95,34 @@ body {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
   }
-  
+  /* Cài đặt kiểu cho các phím nhỏ (như phím ký tự đặc biệt) */
   .key.small {
     font-size: 0.8em;
   }
-  
+  /* Cài đặt kiểu cho phím lớn (phím cách) */
   .key.large {
     font-size: 1.5em;
     padding: 20px;
-    width: 100%;
+    width: 300px;
     text-align: center;
     background-color: #e0e0e0;
   }
-  
+  /* Cài đặt kiểu cho phím đang hoạt động */
   .key.active {
     background-color: #007bff;
     color: white;
   }
-  
+  /* Cài đặt kiểu cho phím đúng */
   .key.correct {
     background-color: #28a745; 
     color: white;
   }
-  
+  /* Cài đặt kiểu cho phím sai */
   .key.incorrect {
     background-color: #dc3545; 
     color: white;
   }
-  
+  /* Cài đặt kiểu cho từ đã gõ đúng */
   .word.correct {
     color: #28a745;
   }
@@ -129,11 +130,9 @@ body {
   .word.incorrect {
     color: #dc3545; 
   }
-  
+  /* Cài đặt kiểu cho từ đã gõ sai */
   .word.current {
     font-weight: bold;
     border-bottom: 2px solid #007bff; 
   }
-  .key.space {
-    width: 100%;
-  }
+  
